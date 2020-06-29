@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatkiWSEI", "StatkiWSEI\StatkiWSEI.csproj", "{60DB73E0-AA40-4C09-AA48-C81F18D3B191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatkiWseiLibrary", "StatkiWseiLibrary\StatkiWseiLibrary.csproj", "{435C6EEF-2F59-4684-BFD3-4C5DFF0C96F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60DB73E0-AA40-4C09-AA48-C81F18D3B191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60DB73E0-AA40-4C09-AA48-C81F18D3B191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60DB73E0-AA40-4C09-AA48-C81F18D3B191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60DB73E0-AA40-4C09-AA48-C81F18D3B191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{435C6EEF-2F59-4684-BFD3-4C5DFF0C96F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{435C6EEF-2F59-4684-BFD3-4C5DFF0C96F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{435C6EEF-2F59-4684-BFD3-4C5DFF0C96F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{435C6EEF-2F59-4684-BFD3-4C5DFF0C96F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6256F46-A46A-4E63-A8BF-19BD32AC8599}
+	EndGlobalSection
+EndGlobal
