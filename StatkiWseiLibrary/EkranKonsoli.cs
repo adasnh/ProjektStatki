@@ -33,19 +33,44 @@ namespace StatkiWseiLibrary
             // Pytanie o nick
             output.Nick = ZapytajONick();
 
-            //tworzenie pola dla gracza
-            LogikaGry.TworzeniePola(output);
+            // Wczytanie siatki
+            LogikaGry.TworzeniePola(wynik);
 
-            
+            // Pytanie o koordynaty dla statkow
 
-            
+            RozstawianieStatkow(wynik);
 
-            
+
             Console.Clear();
 
-            return output;
+            return wynik;
         }
 
+        private static void RozstawianieStatkow(ModelGracza model)
+        {
+            do
+            {
+                Console.Write($"  Gdzie chcesz umiescic statek nr {model.miejsceStatku.Count + 1}: ");
+                string miejsce = Console.ReadLine().Trim();
+
+                bool czyDobreMiejsce = false;
+
+                try
+                {
+                    czyDobreMiejsce = LogikaGry.UmiescStatek(model, miejsce);
+                }
+                catch (Exception x)
+                {
+
+                    Console.WriteLine("  Bład: " + x.Message);
+                }
+
+                if (czyDobreMiejsce == false)
+                {
+                    Console.WriteLine("  To nie jest poprawna lokalizacja.  Sprubój ponownie.");
+                }
+            } while (model.miejsceStatku.Count < 5);
+        }
 
     }
 }

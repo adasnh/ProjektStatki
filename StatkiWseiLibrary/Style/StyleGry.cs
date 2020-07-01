@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StatkiWseiLibrary.Style
 {
-    class StyleGry
+    public class StyleGry
     {
         public static void StatkiTytułStart()
         {

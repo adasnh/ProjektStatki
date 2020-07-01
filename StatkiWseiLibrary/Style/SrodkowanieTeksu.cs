@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StatkiWseiLibrary.Style
 {
-    class SrodkowanieTeksu
+    public class SrodkowanieTeksu
     {
         public static void SrodkowanieTekstu(string wiadomosc)
         {
