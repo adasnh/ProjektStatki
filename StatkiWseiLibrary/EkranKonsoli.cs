@@ -34,16 +34,16 @@ namespace StatkiWseiLibrary
             output.Nick = ZapytajONick();
 
             // Wczytanie siatki
-            LogikaGry.TworzeniePola(wynik);
+            LogikaGry.TworzeniePola(output);
 
             // Pytanie o koordynaty dla statkow
 
-            RozstawianieStatkow(wynik);
+            RozstawianieStatkow(output);
 
 
             Console.Clear();
 
-            return wynik;
+            return output;
         }
 
         private static void RozstawianieStatkow(ModelGracza model)

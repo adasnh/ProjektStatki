@@ -1,1 +1,5 @@
 C:\Users\adasn\source\repos\StatkiWSEI\StatkiWseiLibrary\obj\Debug\StatkiWseiLibrary.csprojAssemblyReference.cache
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWseiLibrary\bin\Debug\StatkiWseiLibrary.dll
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWseiLibrary\bin\Debug\StatkiWseiLibrary.pdb
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWseiLibrary\obj\Debug\StatkiWseiLibrary.dll
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWseiLibrary\obj\Debug\StatkiWseiLibrary.pdb

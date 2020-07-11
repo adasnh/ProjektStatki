@@ -1,1 +1,9 @@
 C:\Users\adasn\source\repos\StatkiWSEI\StatkiWSEI\obj\Debug\StatkiWSEI.csprojAssemblyReference.cache
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWSEI\bin\Debug\StatkiWSEI.exe.config
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWSEI\bin\Debug\StatkiWSEI.exe
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWSEI\bin\Debug\StatkiWSEI.pdb
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWSEI\bin\Debug\StatkiWseiLibrary.dll
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWSEI\bin\Debug\StatkiWseiLibrary.pdb
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWSEI\obj\Debug\StatkiWSEI.csproj.CopyComplete
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWSEI\obj\Debug\StatkiWSEI.exe
+C:\Users\adasn\source\repos\StatkiWSEI\StatkiWSEI\obj\Debug\StatkiWSEI.pdb

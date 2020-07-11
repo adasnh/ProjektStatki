@@ -28,7 +28,7 @@ namespace StatkiWseiLibrary
 
             {
                 LiteraPola = litera,
-                NumerPola= numer,
+                NumerPola = numer,
                 Status = StatusPola.Pusty
             };
 
@@ -50,10 +50,10 @@ namespace StatkiWseiLibrary
             return czyAktywny;
         }
 
-        public static bool PlaceShip(ModelGracza model, string lokalizacja)
+        public static bool UmiescStatek(ModelGracza model, string lokalizacja)
         {
             bool wynik = false;
-            (string wiersz, int kolumna) = SplitShotIntoRowAndColumn(lokalizacja);
+            (string wiersz, int kolumna) = PodzialNaKolumnyIWiersze(lokalizacja);
 
             bool czyWlasciwaLokalizacjaPola = WalidacjaPola(model, wiersz, kolumna);
             bool czyWolnePole = WalidacjaPolozeniaStatku(model, wiersz, kolumna);
@@ -92,9 +92,9 @@ namespace StatkiWseiLibrary
         {
             bool czyWlasciwaLokalizacja = false;
 
-            foreach (var ship in model.miejsceStatku)
+            foreach (var ship in model.poleStrzalu)
             {
-                if (ship.LiteraPola == wiersz.ToUpper() && ship.NumerPola== kolumna)
+                if (ship.LiteraPola == wiersz.ToUpper() && ship.NumerPola == kolumna)
                 {
                     czyWlasciwaLokalizacja = true;
                 }
@@ -103,9 +103,9 @@ namespace StatkiWseiLibrary
             return czyWlasciwaLokalizacja;
         }
 
-        
 
-        public static (string wiersz, int kolumna) SplitShotIntoRowAndColumn(string strzal)
+
+        public static (string wiersz, int kolumna) PodzialNaKolumnyIWiersze(string strzal)
         {
             string wiersz = "";
             int kolumna = 0;
@@ -137,5 +137,56 @@ namespace StatkiWseiLibrary
 
             return licznikStrzalow;
         }
+        public static bool WalidacjaStrzalu(ModelGracza gracz, string wiersz, int kolumna)
+        {
+            bool czyPoprawny = false;
 
+            foreach (var poleSiatki in gracz.poleStrzalu)
+            {
+                if (poleSiatki.LiteraPola == wiersz.ToUpper() && poleSiatki.NumerPola == kolumna)
+                {
+                    if (poleSiatki.Status == StatusPola.Pusty)
+                    {
+                        czyPoprawny = true;
+                    }
+                }
+            }
+
+            return czyPoprawny;
+        }
+        public static bool RezultatStrzaluAktywnegoGracza(ModelGracza przeciwnik , string wiersz, int kolumna)
+        {
+            bool czyTrafiony = false;
+
+            foreach (var statek in przeciwnik.miejsceStatku)
+            {
+                if (statek.LiteraPola == wiersz.ToUpper() && statek.NumerPola == kolumna)
+                {
+                    czyTrafiony = true;
+                    statek.Status = StatusPola.Zatopiony;
+                }
+            }
+
+            return czyTrafiony;
+        }
+        public static void RezultatStrzaluPrzeciwnik(ModelGracza gracz, string wiersz, int kolumna, bool czyTrafiony )
+        {
+
+            foreach (var poleSiatki in gracz.poleStrzalu)
+            {
+                if (poleSiatki.LiteraPola == wiersz.ToUpper() && poleSiatki.NumerPola == kolumna)
+                {
+                    if (czyTrafiony)
+                    {
+                        poleSiatki.Status = StatusPola.Trafiony;
+                    }
+                    else
+                    {
+                        poleSiatki.Status = StatusPola.Pudło;
+                    }
+                }
+            }
+
+        }
     }
+}
