@@ -29,7 +29,7 @@ namespace StatkiWSEI
                 {
 
 
-                    // Use Tuple swap positions
+                    // Zamiana aktywnego gracza
                     (aktywnyGracz, przeciwnik) = (przeciwnik, aktywnyGracz);
 
 
@@ -52,7 +52,7 @@ namespace StatkiWSEI
             Console.ReadLine();
         }
 
-        // private methods
+        // prywatne metody
 
         private static void ZidentyfikujWygranego(ModelGracza zwyciezca)
         {

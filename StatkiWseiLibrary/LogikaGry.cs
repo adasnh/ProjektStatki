@@ -9,6 +9,7 @@ namespace StatkiWseiLibrary
 {
     public static class LogikaGry
     {
+        // Stworzenie siatki o wymierach 5 x 5
         public static void TworzeniePola(ModelGracza model)
         {
             List<string> litery = new List<string> { "A", "B", "C", "D", "E" };
@@ -21,7 +22,8 @@ namespace StatkiWseiLibrary
                 }
             }
         }
-
+        
+        //Stworzenie siatki dla gracza
         private static void DodajPole(ModelGracza model, string litera, int numer)
         {
             ModelSiatki pole = new ModelSiatki
@@ -34,6 +36,8 @@ namespace StatkiWseiLibrary
 
             model.poleStrzalu.Add(pole);
         }
+
+        // Okreslenie aktywnego gracza
 
         public static bool AktywnyGracz(ModelGracza gracz)
         {
@@ -50,6 +54,7 @@ namespace StatkiWseiLibrary
             return czyAktywny;
         }
 
+        // Umieszczanie statkow na planszy wraz  z walidacja 
         public static bool UmiescStatek(ModelGracza model, string lokalizacja)
         {
             bool wynik = false;

@@ -8,6 +8,7 @@ namespace StatkiWseiLibrary.Style
 {
     public class StyleGry
     {
+        // Wiadomosc powitalna
         public static void StatkiTytułStart()
         {
 
@@ -35,6 +36,7 @@ namespace StatkiWseiLibrary.Style
 
         }
 
+        //Wiadomosc po zakonczeniu rozgrywki
         public static void StatkiTytułKoniec()
         {
 

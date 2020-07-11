@@ -24,6 +24,7 @@ namespace StatkiWseiLibrary
             return wyjscie;
         }
 
+        // Tworzenie środowiska dla gracza
         public static ModelGracza TworzenieGracza(string nazwaGracza)
         {
             ModelGracza output = new ModelGracza();
@@ -46,6 +47,7 @@ namespace StatkiWseiLibrary
             return output;
         }
 
+        // Rozstawianie statków na planszy
         private static void RozstawianieStatkow(ModelGracza model)
         {
             do

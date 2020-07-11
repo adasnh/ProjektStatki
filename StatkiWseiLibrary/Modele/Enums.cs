@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace StatkiWseiLibrary.Modele
 {
+    // Statusy pola 
     public enum StatusPola
     {
         Pusty,
